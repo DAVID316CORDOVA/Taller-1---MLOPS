@@ -112,6 +112,9 @@ Los datos de entrada incluyen características del pingüino:
 
 ### Ejemplo de Uso y Respuesta
 
+![Resultado de la predicción](./imagen/resultado-prediccion.PNG)
+
+
 ![Resultado de la predicción](./imagen/resultado-prediccion.png)
 *Figura 3: Resultado de la predicción mostrando la respuesta completa de la API*
 
