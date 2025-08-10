@@ -1,0 +1,24 @@
+services:
+  penguin-api:  # Define el servicio llamado penguin-api para la app de predicción de pingüinos
+    build: .    # Indica que debe construir la imagen Docker desde el Dockerfile en el directorio actual
+
+    ports:
+      - "8989:8000"  # Se expone el puerto 8000 del contenedor en el puerto 8989 del host para acceder a la API externamente
+
+    volumes:
+      - ./models:/app/models:ro  # Se monta la carpeta local 'models' dentro del contenedor en /app/models
+                                 # El sufijo ':ro' indica que el montaje es de solo lectura para proteger los archivos y evitar modificaciones desde el contenedor
+
+    environment:
+      - PYTHONPATH=/app          # Define la variable de entorno PYTHONPATH para que Python pueda encontrar los módulos en /app
+      - PYTHONUNBUFFERED=1       # Desactiva el buffering de salida estándar para que los logs se impriman en tiempo real
+
+    restart: unless-stopped     # Configura el contenedor para que se reinicie automáticamente salvo que se detenga manualmente
+                                # Esto mejora la resiliencia en caso de fallos o reinicios del host
+
+    healthcheck:                # Define un chequeo de salud para Docker para verificar que el contenedor está funcionando correctamente
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]  # Comando que verifica que la ruta /health responde correctamente (código HTTP 2xx-3xx)
+      interval: 30s            # Frecuencia con la que se ejecuta el healthcheck (cada 30 segundos)
+      timeout: 10s             # Tiempo máximo que se espera por la respuesta antes de considerar fallo (10 segundos)
+      retries: 3               # Número de intentos antes de marcar el contenedor como no saludable
+      start_period: 40s        # Periodo de gracia al inicio tras el arranque, donde fallos no se consideran inmediatamente (40 segundos)
