@@ -80,7 +80,7 @@ La API permite:
 
 La API incluye una interfaz web interactiva generada automáticamente por FastAPI:
 
-![Interfaz de selección de modelo](./images/interfaz-api.png)
+![Interfaz de selección de modelo](./imagen/interfaz-api.jpg)
 
 
 *Figura 2: Interfaz web para selección de modelo y entrada de datos*
@@ -112,7 +112,7 @@ Los datos de entrada incluyen características del pingüino:
 
 ### Ejemplo de Uso y Respuesta
 
-![Resultado de la predicción](./images/resultado-prediccion.png)
+![Resultado de la predicción](./imagen/resultado-prediccion.png)
 *Figura 3: Resultado de la predicción mostrando la respuesta completa de la API*
 
 **Request URL:**
