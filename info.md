@@ -8,6 +8,10 @@ En este taller se desarrolló un proyecto completo que abarca desde la obtenció
 
 La estructura del proyecto se organizó de manera modular para facilitar el mantenimiento y escalabilidad:
 
+
+!(images/estructura-archivos.png)
+
+
 ![Estructura de archivos del proyecto](./images/estructura-archivos.png)
 *Figura 1: Estructura de directorios y archivos del proyecto*
 
