@@ -10,12 +10,6 @@ La estructura del proyecto se organizó de manera modular para facilitar el mant
 
 ![Estructura de archivos del proyecto](./imagen/estructura-archivos.PNG)
 
-!(images/estructura-archivos.png)
-
-
-![Estructura de archivos del proyecto](./images/estructura-archivos.png)
-*Figura 1: Estructura de directorios y archivos del proyecto*
-
 ```
 app/
 ├── __init__.py
@@ -87,6 +81,8 @@ La API permite:
 La API incluye una interfaz web interactiva generada automáticamente por FastAPI:
 
 ![Interfaz de selección de modelo](./images/interfaz-api.png)
+
+
 *Figura 2: Interfaz web para selección de modelo y entrada de datos*
 
 **Selección de Modelo:**
