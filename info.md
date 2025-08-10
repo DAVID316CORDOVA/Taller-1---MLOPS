@@ -249,7 +249,7 @@ services:
 
 ```bash
 # Clonar el repositorio
-git clone <tu-repositorio>
+git clone https://github.com/DAVID316CORDOVA/Taller-1---MLOPS.git
 cd penguin-prediction-api
 
 # Construir y ejecutar con Docker Compose
@@ -301,7 +301,7 @@ curl -X POST "http://localhost:8989/predict?model_name=logistic_regression" \
 
 ```
 proyecto-pinguinos/
-├── images/
+├── imagen/
 │   ├── estructura-archivos.png
 │   ├── interfaz-api.png
 │   └── resultado-prediccion.png
@@ -309,7 +309,7 @@ proyecto-pinguinos/
 │   ├── __init__.py
 │   ├── main.py
 │   └── models/
-├── README.md
+├── DESCRIPCION_DEL_TALLER.md
 ├── Dockerfile
 ├── docker-compose.yml
 └── requirements.txt
