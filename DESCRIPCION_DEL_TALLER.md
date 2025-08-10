@@ -138,8 +138,8 @@ http://localhost:8989/predict?model_name=logistic_regression
 **Detalles de la Respuesta:**
 - **Código de estado**: 200 (Éxito)
 - **Tipo de contenido**: application/json
-- **Predicción**: Especie "Adelie" con 99.29% de probabilidad
-- **Probabilidades alternativas**: Chinstrap (0.61%) y Gentoo (0.10%)
+- **Predicción**: Especie "Adelie" con 99.98% de probabilidad
+- **Probabilidades alternativas**: Chinstrap (0.0091%) y Gentoo (0.0050%)
 
 ## 4. Contenerización con Docker
 
