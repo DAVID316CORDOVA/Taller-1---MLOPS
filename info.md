@@ -128,9 +128,9 @@ http://localhost:8989/predict?model_name=logistic_regression
   "species_id": 1,
   "species_name": "Adelie",
   "probability": {
-    "Adelie": 0.9928599236760604,
-    "Chinstrap": 0.006098715140837521,
-    "Gentoo": 0.0010413612831338
+    "Adelie": 0.9998592367605084,
+    "Chinstrap": 0.00009071514083751021,
+    "Gentoo": 0.000050048098654133385
   }
 }
 ```
@@ -211,17 +211,17 @@ services:
 
 ## 6. Resultado Final
 
-✅ **API REST robusta y escalable** para predicción de especies de pingüinos
+**API REST robusta y escalable** para predicción de especies de pingüinos
 
-✅ **Contenerización completa** para facilitar despliegue y distribución
+**Contenerización completa** para facilitar despliegue y distribución
 
-✅ **Código modular y documentado** para mantenibilidad y extensibilidad
+**Código modular y documentado** para mantenibilidad y extensibilidad
 
-✅ **Selección dinámica de modelos** a través de parámetros de petición
+**Selección dinámica de modelos** a través de parámetros de petición
 
-✅ **Interfaz web interactiva** para pruebas y desarrollo
+**Interfaz web interactiva** para pruebas y desarrollo
 
-✅ **Pipeline completo** desde datos hasta producción
+**Pipeline completo** desde datos hasta producción
 
 ### Tecnologías Utilizadas
 
